@@ -1,5 +1,8 @@
 \name{lead150}
 \alias{lead150}
+\concept{Observational study}
+\concept{Causal inference}
+\concept{Matching with multiple controls}
 \docType{data}
 \title{
 Smoking and lead in 150 matched 1-5 sets.

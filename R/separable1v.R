@@ -1,5 +1,5 @@
 separable1v <-
-function (ymat, gamma = 1) 
+function (ymat, gamma = 1)
     {
         n <- dim(ymat)[1]
         m <- dim(ymat)[2]
@@ -15,15 +15,15 @@ function (ymat, gamma = 1)
                 varmaxi <- (-Inf)
                 for (ai in 1:(mi - 1)) {
                     denom <- ai + gamma * (mi - ai)
-                    mua <- (sum(rk[1:ai]) + gamma * sum(rk[(ai + 
+                    mua <- (sum(rk[1:ai]) + gamma * sum(rk[(ai +
                                                                 1):mi]))/denom
-                    vara <- ((sum(rk[1:ai]^2) + gamma * sum(rk[(ai + 
+                    vara <- ((sum(rk[1:ai]^2) + gamma * sum(rk[(ai +
                                                                     1):mi]^2))/denom) - (mua^2)
                     if (mua > mumaxi) {
                         mumaxi <- mua
                         varmaxi <- vara
                     }
-                    else if (mua == mumaxi) 
+                    else if (mua == mumaxi)
                         varmaxi <- max(varmaxi, vara)
                 }
                 mumax <- mumax + mumaxi
@@ -35,7 +35,7 @@ function (ymat, gamma = 1)
         expect <- mumax
         vartotal <- varmax
         dev <- (tstat - expect)/sqrt(vartotal)
-        pval <- 1 - pnorm(dev)
-        list(pval = pval, deviate = dev, statistic = tstat, expectation = expect, 
+        pval <- 1 - stats::pnorm(dev)
+        list(pval = pval, deviate = dev, statistic = tstat, expectation = expect,
              variance = vartotal)
-    }
+}

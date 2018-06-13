@@ -7,4 +7,4 @@ function (gamma, lambda)
         delta<-(gamma * lambda - 1)/(lambda - gamma)
         names(delta)<-lambda
         delta
-    }
+}

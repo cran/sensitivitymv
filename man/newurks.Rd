@@ -1,6 +1,6 @@
 \name{newurks}
 \alias{newurks}
-	
+
 \title{
 	Approximate scores for ranks of row ranges.
 }
@@ -39,4 +39,3 @@ newurks(smat, m1 = 2, m2 = 2, m = 2)
 	data(lead150)
  	head(newurks(mscorev(lead150)))
 }
-

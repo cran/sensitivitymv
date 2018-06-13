@@ -38,4 +38,4 @@ multrnks(rk, m1 = 2, m2 = 2, m = 2)
 	multrnks(1:10)
 	multrnks(1:10,m1=12,m2=20,m=20)
 }
-
+\keyword{ nonparametric }

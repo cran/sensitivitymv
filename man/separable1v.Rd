@@ -1,5 +1,7 @@
 \name{separable1v}
 \alias{separable1v}
+\concept{Sensitivity analysis}
+\concept{Separable approximation}
 \title{
 Asymptotic separable calculations internal to other functions.
 }
@@ -40,4 +42,3 @@ Paul R. Rosenbaum
 data(lead150)
 separable1v(lead150,gamma=2)
 }
-

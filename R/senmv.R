@@ -99,4 +99,4 @@ function (y, gamma = 1, method = NULL, inner = 0, trim = 2.5, lambda = 1/2,
             separable1v(newurks(ms, m1 = m1, m2 = m2, m = m), gamma = gamma)
         else if (m == 1)
             separable1v(ms, gamma = gamma)
-    }
+}

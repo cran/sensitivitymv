@@ -1,10 +1,15 @@
 \name{amplify}
 \alias{amplify}
+\concept{Sensitivity analysis}
+\concept{Observational study}
+\concept{Causal inference}
+\concept{Amplification}
+\concept{Amplify}
 \title{
 Amplification of sensitivity analysis in observational studies.
 }
 \description{
-Uses the method in Rosenbaum and Silber (2009) to interpret a value of the sensitivity parameter gamma, for instance the parameter in the senmv function.  Each value of gamma amplifies to a curve (lambda,delta) in a two-dimensional sensitivity analysis, the inference being the same for all points on the curve.  That is, a one-dimensional sensitivity analysis in terms of gamma has a two-dimensional interpretation.
+Use of this function is illustrated in Rosenbaum (2015).  Uses the method in Rosenbaum and Silber (2009) to interpret a value of the sensitivity parameter gamma, for instance the parameter in the senmv function.  Each value of gamma amplifies to a curve (lambda,delta) in a two-dimensional sensitivity analysis, the inference being the same for all points on the curve.  That is, a one-dimensional sensitivity analysis in terms of gamma has a two-dimensional interpretation.
 }
 \usage{
 amplify(gamma, lambda)
@@ -18,16 +23,13 @@ amplify(gamma, lambda)
 }
 }
 \details{
-A single value of gamma, say gamma = 3.5 in the example, corresponds to a curve of values of (lambda, delta), including (4, 26), (6,8), (8,6), and (11,5) in the example.  An unobserved covariate that is associated with a lambda = 6 fold increase in the odds of treatment and a delta = 8 fold increase in the odds of a positive pair difference is equivalent to gamma = 3.5.  
+A single value of gamma, say gamma = 3.5 in the example, corresponds to a curve of values of (lambda, delta), including (4, 26), (6,8), (8,6), and (11,5) in the example.  An unobserved covariate that is associated with a lambda = 6 fold increase in the odds of treatment and a delta = 8 fold increase in the odds of a positive pair difference is equivalent to gamma = 3.5.
 
 The curve is gamma = (lambda*delta + 1)/(lambda+delta).  Amplify is given one gamma and a vector of lambdas and solves for the vector of deltas.  The calculation is elementary.
 
 This interpretation of gamma is developed in detail in Rosenbaum and Silber (2009), and it makes use of Wolfe's (1974) family of semiparametric deformations of an arbitrary symmetric distribuiton.
-
 Strictly speaking, the amplification describes matched pairs, not matched sets.  The senmv function views a k-to-1 matched set with k controls matched to one treated individual as a collection of k correlated treated-minus-control matched pair differences; see Rosenbaum (2007).  For matched sets, it is natural to think of the amplification as describing any one of the k matched pair differences in a k-to-1 matched set.
-
 The curve has asymptotes that the function amplify does not compute: gamma corresponds with (lambda,delta) = (gamma, Inf) and (Inf, gamma).
-
 A related though distict idea is developed in Gastwirth et al (1998).  The two approaches agree when the outcome is binary, that is, for McNemar's test.
 }
 \value{
@@ -38,7 +40,11 @@ Gastwirth, J. L., Krieger, A. M., Rosenbaum, P. R. (1998) Dual and simultaneous 
 
 Rosenbaum, P. R. (2007) Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.
 
-Rosenbaum, P. R. and Silber, J. H. (2009) Amplification of sensitivity analysis in observational studies.  Journal of the American Statistical Association, 104, 1398-1405.
+Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org.
+
+Rosenbaum, P. R. and Silber, J. H. (2009) Amplification of sensitivity analysis in observational studies.  Journal of the American Statistical Association, 104, 1398-1405. <doi:10.1198/jasa.2009.tm08470>
+
+Rosenbaum, P. R. (2017) Observation and Experiment: An Introduction to Causal Inference.  Cambridge, MA: Harvard University Press.  Amplification is discussed in Chapter 9.
 
 Wolfe, D. A. (1974) A charaterization of population weighted symmetry and related results.  Journal of the American Statistical Association, 69, 819-822.
 }
@@ -55,4 +61,3 @@ The example expands the discussion of Table 1 in Rosenbaum (2007).  The study is
 	amplify(3.5,6)
 	amplify(3.5,c(4,6,8,11))
 }
-

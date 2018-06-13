@@ -1,11 +1,13 @@
 \name{erpcp}
 \alias{erpcp}
+\concept{Observational study}
+\concept{Matched pairs}
 \docType{data}
 \title{
 DNA Damage Among Welders
 }
 \description{
-Matched pairs of a welder and a control, matching for age and smoking.  The values are DNA elution rates through polycarbonate filters with proteinase K (or erpcp).  Data are originally from Werfel et al. (1998) and were used as an example in Rosenbaum (2007).  Data are used to illustrate the senmv function in the sensitivitymv package.   
+Matched pairs of a welder and a control, matching for age and smoking.  The values are DNA elution rates through polycarbonate filters with proteinase K (or erpcp).  Data are originally from Werfel et al. (1998) and were used as an example in Rosenbaum (2007).  Data are used to illustrate the senmv function in the sensitivitymv package.
 }
 \usage{data(erpcp)}
 \format{

@@ -5,7 +5,7 @@
 Computes the M-scores used by senmv.
 }
 \description{
-Computes the M-scores used by senmv for sensitivity analysis in observational studies using Huber-Maritz M-tests.  
+Computes the M-scores used by senmv for sensitivity analysis in observational studies using Huber-Maritz M-tests.
 }
 \usage{
 mscorev(ymat, inner = 0, trim = 2.5, qu = 0.5, TonT = FALSE)
@@ -34,13 +34,15 @@ Generally, a matrix with the same dimensions as ymat containing the M-scores.  E
 }
 \references{
 Rosenbaum, P. R. (2007) Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.
+
+Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org
 }
 \author{
 Paul R. Rosenbaum
 }
 
 \note{
-The example reproduces Table 3 in Rosenbaum (2007).  
+The example reproduces Table 3 in Rosenbaum (2007).
 }
 
 \examples{

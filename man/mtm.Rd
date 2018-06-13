@@ -1,5 +1,8 @@
 \name{mtm}
 \alias{mtm}
+\concept{Observational study}
+\concept{Causal inference}
+\concept{Evidence factors}
 \docType{data}
 \title{
 DNA damage from exposure to chromium}
@@ -19,7 +22,9 @@ Meibian et al. (2008).  Used as an example in Rosenbaum (2011).
 \references{
 Meibian, Z., Zhijian, C., Qing, C. et al. (2008) Investigating DNA damage in tannery workers occupationally exposed to tivalent chromium using the comet assay.  Mutation Research 654, 45-51.
 
-Rosenbaum, P. R. (2011) Some approximate evidence factors in observational studies.  Journal of the American Statistical Association, 2011, 106, 285-295.
+Rosenbaum, P. R. (2011) Some approximate evidence factors in observational studies.  Journal of the American Statistical Association, 2011, 106, 285-295. <doi:10.1198/jasa.2011.tm10422>
+
+Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org
 }
 \examples{
 data(mtm)

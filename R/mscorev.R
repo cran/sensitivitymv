@@ -1,5 +1,5 @@
 mscorev <-
-function (ymat, inner = 0, trim = 2.5, qu = 0.5, TonT = FALSE) 
+function (ymat, inner = 0, trim = 2.5, qu = 0.5, TonT = FALSE)
     {
         ymat <- as.matrix(ymat)
         n <- dim(ymat)[1]
@@ -8,16 +8,16 @@ function (ymat, inner = 0, trim = 2.5, qu = 0.5, TonT = FALSE)
         one <- rep(1, m - 1)
         difs <- array(NA, c(n, m, m - 1))
         for (j in 1:m) {
-            difs[, j, ] <- outer(as.vector(unlist(ymat[, j])), one, 
+            difs[, j, ] <- outer(as.vector(unlist(ymat[, j])), one,
                                  "*") - ymat[, -j]
         }
         ms <- as.vector(difs)
         if ((trim < Inf) | (inner > 0)) {
-            hqu <- as.numeric(quantile(abs(ms), qu, na.rm = TRUE))
+            hqu <- as.numeric(stats::quantile(abs(ms), qu, na.rm = TRUE))
             if (hqu > 0) {
                 ms <- ms/hqu
                 if ((trim < Inf) & (inner < trim)) {
-                    ab <- pmin(1, pmax(0, (abs(ms) - inner))/(trim - 
+                    ab <- pmin(1, pmax(0, (abs(ms) - inner))/(trim -
                                                                   inner))
                 }
                 else if ((trim < Inf) & (inner == trim)) {
@@ -47,4 +47,4 @@ function (ymat, inner = 0, trim = 2.5, qu = 0.5, TonT = FALSE)
             ms <- ms/outer(ni, rep(1, m), "*")
         }
         ms
-    }
+}

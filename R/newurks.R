@@ -8,4 +8,4 @@ function (smat, m1 = 2, m2 = 2, m = 2)
             smat[, j] <- smat[, j] * urk
         }
         smat
-    }
+}

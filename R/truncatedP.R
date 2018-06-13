@@ -21,4 +21,4 @@ function (p, trunc = 0.2)
             }
             pr
         }
-    }
+}

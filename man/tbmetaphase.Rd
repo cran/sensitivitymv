@@ -1,5 +1,7 @@
 \name{tbmetaphase}
 \alias{tbmetaphase}
+\concept{Observational study}
+\concept{Matching with variable controls}
 \docType{data}
 \title{
 Genetic damage from drugs used to treat TB
