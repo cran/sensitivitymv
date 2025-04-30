@@ -23,11 +23,13 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{sensitivitymv}
 }
 \references{
-Rosenbaum, P. R. (2007) Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464. <doi:10.1111/j.1541-0420.2006.00717.x>
+Rosenbaum, P. R. (2007) <doi:10.1111/j.1541-0420.2006.00717.x> Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.
 
-Rosenbaum, P. R. (2010) Design of Observational Studies.  New York: Springer <doi:10.1007/978-1-4419-1213-8> Section 2.9 explains randomization inference with M-statistics in an example with 5 matched pairs.
+Rosenbaum, P. R. (2010) <doi:10.1007/978-1-4419-1213-8> Design of Observational Studies.  New York: Springer  Section 2.9 explains randomization inference with M-statistics in an example with 5 matched pairs.
 
-Rosenbaum, P. R. (2013) Impact of multiple matched controls on design sensitivity in observational studies.  Biometrics, 2013, 69, 118-127. <doi:10.1111/j.1541-0420.2012.01821.x>
+Rosenbaum, P. R. (2013) <doi:10.1111/j.1541-0420.2012.01821.x> Impact of multiple matched controls on design sensitivity in observational studies.  Biometrics, 2013, 69, 118-127.
+
+Rosenbaum, P. R. (2014) <doi:10.1080/01621459.2013.879261> Weighted M-statistics with superior design sensitivity in matched observational studies with multiple controls. Journal of the American Statistical Association, 109(507), 1145-1158.
 
 Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org
 

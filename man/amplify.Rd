@@ -36,15 +36,18 @@ A related though distict idea is developed in Gastwirth et al (1998).  The two a
 Returns a vector of values of delta of length(lambda) with names lambda.
 }
 \references{
-Gastwirth, J. L., Krieger, A. M., Rosenbaum, P. R. (1998) Dual and simultaneous sensitivity analysis for matched pairs.  Biometrika, 85, 907-920.
+Gastwirth, J. L., Krieger, A. M., Rosenbaum, P. R. (1998)
+<doi:10.1093/biomet/85.4.907> Dual and simultaneous sensitivity analysis for matched pairs.  Biometrika, 85, 907-920.
 
-Rosenbaum, P. R. (2007) Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.
+Rosenbaum, P. R. (2007) <doi:10.1111/j.1541-0420.2006.00717.x> Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.
 
 Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org.
 
-Rosenbaum, P. R. and Silber, J. H. (2009) Amplification of sensitivity analysis in observational studies.  Journal of the American Statistical Association, 104, 1398-1405. <doi:10.1198/jasa.2009.tm08470>
+Rosenbaum, P. R. and Silber, J. H. (2009) <doi:10.1198/jasa.2009.tm08470> Amplification of sensitivity analysis in observational studies.  Journal of the American Statistical Association, 104, 1398-1405.
 
 Rosenbaum, P. R. (2017) Observation and Experiment: An Introduction to Causal Inference.  Cambridge, MA: Harvard University Press.  Amplification is discussed in Chapter 9.
+
+Rosenbaum, P. R. (2020) <doi:10.1007/978-3-030-46405-9>  Design of Observational Studies, 2nd edition. New York: Springer. Section 3.6 discusses amplification.
 
 Wolfe, D. A. (1974) A charaterization of population weighted symmetry and related results.  Journal of the American Statistical Association, 69, 819-822.
 }

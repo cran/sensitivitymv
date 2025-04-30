@@ -33,17 +33,18 @@ The truncated product with trunc < 1 is useful in combining P-value upper bounds
 	Returns the one P-value for the truncated product.  For trunc < 1, the distribution is not continuous, but rather attaches positive probability to a P-value of 1.
 }
 \references{
-Hsu, J. Y., Small, D. S. and Rosenbaum, P. R. (2013) Effect modification and design sensitivity in observational studies.  Journal of the American Statistical Association, 108, 135-148.
+Hsu, J. Y., Small, D. S. and Rosenbaum, P. R. (2013)
+<doi:10.1080/01621459.2012.742018> Effect modification and design sensitivity in observational studies.  Journal of the American Statistical Association, 108, 135-148.
 
 Meibian, Z., Zhijian, C., Qing, C. et al. (2008) Investigating DNA damage in tannery workers occupationally exposed to tivalent chromium using the comet assay.  Mutation Research 654, 45-51.
 
-Rosenbaum, P. R. (2010) Evidence factors in observational studies.  Biometrika, 97, 333-345.
+Rosenbaum, P. R. (2010) <doi:10.1093/biomet/asq019> Evidence factors in observational studies.  Biometrika, 97, 333-345.
 
-Rosenbaum, P. R. (2011) Some approximate evidence factors in observational studies.  Journal of the American Statistical Association, 106, 285-295. <doi:10.1198/jasa.2011.tm10422>
+Rosenbaum, P. R. (2011) <doi:10.1198/jasa.2011.tm10422> Some approximate evidence factors in observational studies.  Journal of the American Statistical Association, 106, 285-295. <doi:10.1198/jasa.2011.tm10422>
 
 Rosenbaum, P. R. (2015). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org
 
-Rosenbaum, P. R. (2017). The general structure of evidence factors in observational studies. Statistical Science, 32(4), 514-530. <doi:10.1214/17-STS621>
+Rosenbaum, P. R. (2021) <doi:10.1201/9781003039648> Replication and Evidence Factors in Observational Studies. Chapman and Hall/CRC.
 
 Zaykin, D. V., Zhivotovsky, L. A., Westfall, P. H. and Weir, B. S. (2002) Truncated product method of combining P-values.  Genetic Epidemiology, 22, 170-185. <doi:10.1002/gepi.0042>
 

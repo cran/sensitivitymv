@@ -63,9 +63,11 @@ The senmv function can be used in the calculation of approximate evidence factor
 }
 \references{
 Main references:
-Rosenbaum, P. R. (2007) Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.  This paper is the main reference for the senmv function when weights are not used, m1=m2=m=1. <doi:10.1111/j.1541-0420.2006.00717.x>
+Rosenbaum, P. R. (2007) <doi:10.1111/j.1541-0420.2006.00717.x> Sensitivity analysis for m-estimates, tests and confidence intervals in matched observational studies.  Biometrics, 2007, 63, 456-464.  This paper is the main reference for the senmv function when weights are not used, m1=m2=m=1.
 
-Rosenbaum, P. R. (2013) Impact of multiple matched controls on design sensitivity in observational studies.  Biometrics, 2013, 69, 118-127.  Evaluates the performance of the methods in the paper above, and in particular provides a basis for selecting the parameter values for senmv.  In particular, this paper compares methods h, i, and t.  <doi:10.1111/j.1541-0420.2012.01821.x>
+Rosenbaum, P. R. (2013) <doi:10.1111/j.1541-0420.2012.01821.x> Impact of multiple matched controls on design sensitivity in observational studies.  Biometrics, 2013, 69, 118-127.  Evaluates the performance of the methods in the paper above, and in particular provides a basis for selecting the parameter values for senmv.  In particular, this paper compares methods h, i, and t.
+
+Rosenbaum, P. R. (2014) <doi:10.1080/01621459.2013.879261> Weighted M-statistics with superior design sensitivity in matched observational studies with multiple controls. Journal of the American Statistical Association, 109(507), 1145-1158.
 
 Rosenbaum, P. R. (2015a). Two R packages for sensitivity analysis in observational studies. Observational Studies, 1(1), 1-17.  Free on-line at obsstudies.org
 ---------------------------------------
@@ -83,6 +85,8 @@ Gastwirth, J. L., Krieger, A. M., and Rosenbaum, P. R. (2000) Asymptotic separab
 Pitman, E. J. G. (1937) Significance tests which may be applied to samples from any populations.  JRSS-supplement (later called series B), 4, 119-130.  An early technical discussion of the permutation distribution of the sample mean, or the permutational t-test.
 
 Rosenbaum, P. R. (2010) Design of Observational Studies.  New York: Springer 2010.  <doi:10.1111/j.1541-0420.2012.01821.x> Section 2.9 contains an elementary textbook discussion of Maritz's permutation distribution for m-statistics.
+
+Rosenbaum, P. R. (2025) An Introduction to the Theory of Observational Studies.  New York: Springer.  ISBN 978-3-031-90493-6.
 
 Rosenbaum, P. R. (2011) Some approximate evidence factors in observational studies.  Journal of the American Statistical Association, 2011, 106, 285-295.  <doi:10.1198/jasa.2011.tm10422> The method described in this paper may be implemented using senmv.  To do this, one uses senmv several times, combining the resulting one-sided P-value bounds, perhaps using Fisher's method for combining P-values.  In the example of this paper, y is n x 3 for three groups in matched triples, and the paper uses Fisher's method to combine the P-value bounds from senmv(y) and senmv(y[,2:3]) for an appropriately defined y.  See the mtm example in the documentation for truncatedP and truncatedPbg.
 
